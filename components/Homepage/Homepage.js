@@ -1,10 +1,13 @@
 import React from 'react';
+import Typography from '@mui/material/Typography';
 
 const Homepage = () => {
   return (
     <div className="container">
-      <h1>Welcome!</h1>
-      <h2>This is your shell app.</h2>
+      <Typography mb={2} variant="h4">
+        Welcome!
+      </Typography>
+      <Typography variant="h6">This is your shell app.</Typography>
     </div>
   );
 };

@@ -12,13 +12,15 @@ const CartApp = React.lazy(() => import('cart/App'));
 const App = () => (
   <BrowserRouter>
     <Navbar />
-    <Suspense fallback={<div>Loading...</div>}>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/product" element={<ProductApp />} />
-        <Route path="/cart" element={<CartApp />} />
-      </Routes>
-    </Suspense>
+    <div className="main-container">
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/product" element={<ProductApp />} />
+          <Route path="/cart" element={<CartApp />} />
+        </Routes>
+      </Suspense>
+    </div>
   </BrowserRouter>
 );
 export default App;
