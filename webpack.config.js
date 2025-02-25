@@ -68,14 +68,6 @@ module.exports = {
           singleton: true,
           requiredVersion: deps["@mui/icons-material"],
         },
-        "react-redux": {
-          singleton: true,
-          requiredVersion: deps["react-redux"],
-        },
-        "@reduxjs/toolkit": {
-          singleton: true,
-          requiredVersion: deps["@reduxjs/toolkit"],
-        },
       },
     }),
   ],
